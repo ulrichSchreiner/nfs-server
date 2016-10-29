@@ -6,6 +6,8 @@ please note: there is no security implemented, so use this container only in a s
 
 start with
 ```
-docker run -d -v /my/local/export:/data ulrichschreiner/nfs-server
+docker run --privileged -d -v /my/local/export:/data ulrichschreiner/nfs-server
 ```
+
+You must use the `--privileged` option.
 
